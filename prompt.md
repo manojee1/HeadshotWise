@@ -6,7 +6,7 @@ This document contains the AI prompts for generating professional headshots in t
 
 **Prompt:**
 ```
-CTransform this photo into photorealistic professional headshot. Use soft, flattering studio lighting against a solid dark gray backdrop. Dress me in a modern, stylish, professional business attire. Maintain my exact facial features and likeness, but give me a confident and approachable expression. The final image should be high-resolution with a sharp focus on my face. Neutral studio background. High-angle perspective, showing full head and body upto the bust, with soft, diffused lighting creating gentle catchlights. 85mm lens aesthetic with shallow depth of field - sharp focus on eyes, soft bokeh background. Natural skin texture with visible hair detail. Bright, airy feel. Make subject look great and accurate to their original appearance.
+Transform this photo into photorealistic professional headshot. Use soft, flattering studio lighting against a solid dark gray backdrop. Dress me in a modern, stylish, professional business attire. Maintain my exact facial features and likeness, but give me a confident and approachable expression. The final image should be high-resolution with a sharp focus on my face. Neutral studio background. High-angle perspective, showing full head and body upto the bust, with soft, diffused lighting creating gentle catchlights. 85mm lens aesthetic with shallow depth of field - sharp focus on eyes, soft bokeh background. Natural skin texture with visible hair detail. Bright, airy feel. Make subject look great and accurate to their original appearance.
 ```
 
 ## Style 2: Creative Professional
