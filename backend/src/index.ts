@@ -16,20 +16,29 @@ app.use(helmet());
 // CORS configuration
 app.use(cors({
   origin: (origin, callback) => {
+    console.log('CORS request from origin:', origin);
+    console.log('Allowed origins:', config.CORS_ORIGINS);
+    
     // Allow requests with no origin (mobile apps, curl, etc.)
-    if (!origin) return callback(null, true);
+    if (!origin) {
+      console.log('Allowing request with no origin');
+      return callback(null, true);
+    }
     
     // Check if origin is in allowed list
     if (config.CORS_ORIGINS.includes(origin)) {
+      console.log('Origin allowed:', origin);
       return callback(null, true);
     }
     
     // For development, allow localhost with any port
-    if (config.NODE_ENV === 'development' && origin.includes('localhost')) {
+    if (config.NODE_ENV === 'development' && origin && origin.includes('localhost')) {
+      console.log('Allowing localhost in development:', origin);
       return callback(null, true);
     }
     
     // Reject other origins
+    console.log('Origin rejected:', origin);
     return callback(new Error('Not allowed by CORS'), false);
   },
   credentials: true,
