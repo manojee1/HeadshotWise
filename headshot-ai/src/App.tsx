@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Check, Eye, Download, Move } from 'lucide-react'
+import { Check, Download } from 'lucide-react'
 import PhotoUpload from './components/PhotoUpload'
 import StyleSelection from './components/StyleSelection'
 import type { StyleType } from './components/StyleSelection'
