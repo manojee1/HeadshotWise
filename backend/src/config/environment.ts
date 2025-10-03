@@ -16,7 +16,8 @@ export const config = {
   RATE_LIMIT_MAX_REQUESTS: 10,
   
   // CORS Configuration
-  CORS_ORIGIN: 'http://localhost:5173',
+  CORS_ORIGIN: process.env.CORS_ORIGIN || 'http://localhost:5173',
+  CORS_ORIGINS: process.env.CORS_ORIGINS ? process.env.CORS_ORIGINS.split(',') : ['http://localhost:5173'],
   
   // Image Processing
   MAX_WIDTH: 2048,
